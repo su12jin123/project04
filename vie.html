@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vie et maison</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/vie.css">
+    <script src="lib/jquery-3.7.0.min (1).js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+        $(function () {
+            let imageList = ['img/note_img01.jpg', 'img/note_img02.jpg', 'img/note_img03.jpg']
+            $('.sec2 .list_text .item').mouseenter(function () {
+                i = $(this).index();
+
+                $('.sec2 .list figure img').attr('src', imageList[i])
+            });
+
+            let bestList = $('.sec3 .inner .left ul li')
+            bestList.click(function () {
+                bestList.removeClass('on')
+                $(this).addClass('on')
+
+                $('.sec3 .best').removeClass('on')
+                $('.sec3 .best').eq($(this).index()).addClass('on')
+            })
+
+
+            var swiper = new Swiper(".best_slide_cont", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            var swiper01 = new Swiper(".insta_slide", {
+                slidesPerView: 3.5,
+                spaceBetween: 25,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <img class="logo" src="img/logo.png" alt="">
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">0/Bag</a></li>
+                        <li><a href="#"><img src="img/user.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/search.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div><!-- inner end -->
+        </header>
+        <div class="main_visual">
+            <figure>
+                <img src="img/main_visual01.jpg" alt="">
+                <p>VIE ET MAISON 라이프 스타일 편집샵 비에메종</p>
+            </figure>
+            <figure><img src="img/main_visual02.jpg" alt="">
+                <p>DESIGN STUDIO VIE ET 디자인 스튜디오 비에</p>
+            </figure>
+        </div><!-- main_visual end -->
+
+        <section class="sec1">
+            <div class="inner">
+                <div class="title">
+                    <h3>VIE MIL</h3>
+                    <p>비밀스럽게 소개하고픈 특별한 제품들을 모았어요.<br>이제는 온라인에서도 만나볼 수 있습니다.</p>
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/vie_img01.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>LA MAGIEE 고블렛 / 블루</h3>
+                        <p>31,000원</p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/vie_img02.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>LA MAGIEE 고블렛 / 핑크</h3>
+                        <p>31,000원</p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/vie_img03.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>아델리아 레트로 사쿠라 유리컵</h3>
+                        <p>14,000원</p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/vie_img04.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>록산 레몬짜개 티컵</h3>
+                        <p>17,000원</p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/vie_img05.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>바나나 스푼 / 포크</h3>
+                        <p>10,000원</p>
+                    </div>
+                </div><!-- item end -->
+
+            </div><!-- inner end -->
+        </section><!-- sec1 end -->
+
+        <section class="sec2">
+            <h1>Editor's Note</h1>
+            <div class="inner">
+                <div class="list">
+                    <figure>
+                        <img src="img/note_img01.jpg" alt="">
+                    </figure>
+                </div><!-- list end -->
+                <div class="list_text">
+                    <div class="item">
+                        <div class="text">
+                            <h4>주방 질서를 바꿔보세요</h4>
+                            <a href="#">전체보기</a>
+                        </div><!-- text end -->
+
+                        <p>직화와 오븐 사용이 가능하고 냄새 배임도 걱정 없는, 노다호로 저장용기로 냉장고를 정리해보세요. 80년 전통을 계승하고 있는 법랑 주방용품 브랜드답게,
+                            비에메종에서도 오랜기간 가장 사랑을 많이 받았습니다.</p>
+
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <div class="text">
+                            <h4>Drip Chair Yellow</h4>
+                            <a href="#">전체보기</a>
+                        </div>
+
+                        <p>직더 쉽고 깔끔하게, 더 맛있게, 더 즐겁게<br>
+                            드립백 전용 거치대 드립체어입니다.</p>
+
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <div class="text">
+                            <h4>홍차를 제대로 즐기고 싶다면</h4>
+                            <a href="#">전체보기</a>
+                        </div><!-- text end -->
+
+                        <p>몸을 편안하게 만드는 차의 힘을 느껴보세요. 찻잎이 우려나기 좋은 둥근 형태의 도자기, 런던포터리는 유서깊은 영국 티팟 브랜드입니다. 넉넉한 용량으로 얼음 가득
+                            냉침도 문제 없어요.</p>
+
+                    </div><!-- item end -->
+                </div><!-- list_text end -->
+            </div><!-- inner end -->
+
+            <!--    <div class="img">
+                <img src="img/note_img01.jpg" alt="">
+                <img src="img/note_img02.jpg" alt="">
+                <img src="img/note_img03.jpg" alt="">
+            </div> -->
+        </section><!-- sec2 end-->
+
+        <section class="sec3">
+            <div class="inner">
+                <div class="left">
+                    <h3>Best Seller</h3>
+                    <ul class="best_menu">
+                        <li class="on">FOG LINEN WORK</li>
+                        <li>VIE ET MAISON</li>
+                        <li>NODA HORO</li>
+                        <li>ACME</li>
+                        <li>LONDON POTTERY</li>
+                        <li>STUDIO M</li>
+                    </ul>
+
+                    <div class="btn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div><!-- left end -->
+
+                <div class="right">
+                    <div class="swiper best_slide_cont best on">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img01.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도 샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div class="price">
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/best_img02.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 블랑제리 BOULANGERIE</h4>
+                                        <div class="price">
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/fog3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>린넨 테이프 니트 매트</h4>
+                                        <div class="price">
+                                            <!-- <p>28,000원</p> -->
+                                            <strong>28,000원<!-- <span>50%</span> --></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/fog4.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>철제 직사각형 깊은 바스켓 2size</h4>
+                                        <div class="price">
+                                            <p>39,000원</p>
+                                            <strong>37,100원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+
+
+                    <div class="swiper best_slide_cont best">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/vie1.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>vie mil</p>
+                                        <h4>다람쥐 접시</h4>
+                                        <div class="price">
+                                            <p>19,800원</p>
+                                            <strong>18,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/vie2.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>vie mil</p>
+                                        <h4>토마토 젓가락 받침</h4>
+                                        <div class="price">
+                                            <p>9,600원</p>
+                                            <strong>8,000원<span>20%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/vie3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>vie mil</p>
+                                        <h4>392 plusm 접이식 양우산</h4>
+                                        <div class="price">
+                                            
+                                            <strong>39,000원</strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/vie4.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>vie mil</p>
+                                        <h4>RAW 우드 버터나이프</h4>
+                                        <div class="price">
+                                            <p>6,600원</p>
+                                            <strong>6,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+                    <div class="swiper best_slide_cont best">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/noda.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>NODA HORO</p>
+                                        <h4>노다호로 법랑 양수냄비</h4>
+                                        <div class="price">
+                                            <p>53,900원</p>
+                                            <strong>49,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/noda1.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>NODA HORO</p>
+                                        <h4>노다호로 법랑 나베냄비</h4>
+                                        <div class="price">
+                                            <p>53,900원</p>
+                                            <strong>49,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/noda2.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>NODA HORO</p>
+                                        <h4>노다호로 법랑 팟틀 / 1.5L</h4>
+                                        <div class="price">
+                                            <p>86,400원</p>
+                                            <strong>72,000원<span>20%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/noda3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>NODA HORO</p>
+                                        <h4>노다호로 법랑 포치카 주전자 / 1.5L</h4>
+                                        <div class="price">
+                                            <p>74,800원</p>
+                                            <strong>68,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+
+
+                    <div class="swiper best_slide_cont best">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/acme1.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>ACME</p>
+                                        <h4>애크미 로만 / 화이트 (3 SIZE)</h4>
+                                        <div class="price">
+                                            <p>20,500원</p>
+                                            <strong>18,450원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/acme2.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>ACME</p>
+                                        <h4>애크미 로만 / 카와카와 (3 SIZE)</h4>
+                                        <div class="price">
+                                            <p>20,500원</p>
+                                            <strong>18,450원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/acme3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>ACME</p>
+                                        <h4>애크미 다이너 / 에그쉘</h4>
+                                        <div class="price">
+                                            <p>31,500원</p>
+                                            <strong>28,350원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/acme4.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>ACME</p>
+                                        <h4>애크미 바비 머그 / 클레이</h4>
+                                        <div class="price">
+                                            <p>30,000원</p>
+                                            <strong>27,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+
+
+                    <div class="swiper best_slide_cont best">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/london1.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>LONDON POTTERY</p>
+                                        <h4>팜하우스 2컵 티팟 600ml / 레드</h4>
+                                        <div class="price">
+                                            <p>60,500원</p>
+                                            <strong>55,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/london2.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>LONDON POTTERY</p>
+                                        <h4>팜하우스 2컵 티팟 600ml / 옐로우</h4>
+                                        <div class="price">
+                                            <p>60,500원</p>
+                                            <strong>55,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/london3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>LONDON POTTERY</p>
+                                        <h4>팜하우스 2컵 티팟 600ml / 아이보리</h4>
+                                        <div class="price">
+                                            <p>60,500원</p>
+                                            <strong>55,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/london4.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>LONDON POTTERY</p>
+                                        <h4>팜하우스 2컵 티팟 600ml / 그린</h4>
+                                        <div class="price">
+                                            <p>60,500원</p>
+                                            <strong>55,000원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+                    <div class="swiper best_slide_cont best">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/studio1.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>STUDIO M</p>
+                                        <h4>튜튜 라운드 플레이트 / 화이트 (2 SIZE)</h4>
+                                        <div class="price">
+                                            <p>38,000원</p>
+                                            <strong>30,400원<span>20%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/studio2.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>STUDIO M</p>
+                                        <h4>튜튜 라운드 플레이트 / 베이지 (2 SIZE)</h4>
+                                        <div class="price">
+                                            <p>38,000원</p>
+                                            <strong>30,400원<span>20%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/studio3.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>STUDIO M</p>
+                                        <h4>튜튜 오벌 플레이트 / 화이트</h4>
+                                        <div class="price">
+                                            <p>57,000원</p>
+                                            <strong>51,300원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/studio4.jpg" alt="">
+                                    </figure>
+                                    <div class="info">
+                                        <p>STUDIO M</p>
+                                        <h4>튜튜 오벌 플레이트 / 베이지</h4>
+                                        <div class="price">
+                                            <p>57,000원</p>
+                                            <strong>51,300원<span>10%</span></strong>
+                                        </div>
+                                    </div><!-- info end -->
+                                </a>
+                            </div>
+                        </div><!-- swiper-wrapper end -->
+
+                    </div><!-- best_slide_cont end -->
+
+                </div><!-- right end -->
+            </div><!-- inner end -->
+        </section><!-- sec3 end -->
+
+        <section class="sec4">
+            <div class="inner">
+                <h3>Brand</h3>
+                <div class="list">
+                    <div class="left">
+                        <img src="img/brand_img01.jpg" alt="">
+                        <div class="text">
+                            <h3>ACME</h3>
+                            <p>커피업계로부터 오랜 시간 사랑 받는 뉴질랜드<br>
+                                도자 브랜드 애크미의 기능적이고도 아름다운 커피잔</p>
+                            <span><a href="#">상품보러가기</a></span>
+                        </div><!-- text end -->
+                    </div><!-- left end -->
+                    <div class="right">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img02.jpg" alt="">
+                                </figure>
+                                <!-- <div class="text"> -->
+                                <h4>NODA HORO</h4>
+                                <p>80년 전통의 일본 법랑 제조사의 주방용품<br>
+                                    직화와 오븐사용이 가능한 다용도 식기</p>
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img03.jpg" alt="">
+                                </figure>
+                                <!-- <div class="text"> -->
+                                <h4>LONDON POTTERY</h4>
+                                <p>귀여운 형태와 사랑스러운 컬러, 합리적인 사이즈로 영국의 가정에서 오랫동안 사랑받고 있는 티팟</p><!-- </div> -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img04.jpg" alt="">
+                                </figure>
+                                <div class="text">
+                                    <h4>STUDIO M</h4>
+                                    <p>일본의 핸드메이드 테이블웨어 회사로, 즐거운 식사 시간을 식기를 통해 제안하고자 합니다</p>
+                                </div>
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/pf.jpg" alt="">
+                                </figure>
+                                <div class="text">
+                                    <h4>P. F. CANDLE</h4>
+                                    <p>피에프 캔들의 향은 공간을 압도하기 보다는 은은히 공간을 채우는 것을 원합니다.</p>
+                                </div>
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- right end -->
+                </div>
+            </div><!-- inner end -->
+        </section><!-- sec4 end -->
+
+        <section class="sec5">
+            <img src="img/banner01.jpg" alt="">
+            <div class="inner">
+                <div>
+                    <h3>Brand Archive</h3>
+                    <h4>VIE ET MAISON BRAND CHOICE</h4>
+                    <p>매일 그리고 오랜 기간 곁에 두고 싶은 제품과 브랜드를 소개합니다.<br>
+                        아카이브를 통해 해외 창작자들의 이야기를 만나보세요.</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div><!-- inner end -->
+        </section><!-- sec5 end -->
+
+        <section class="sec6">
+            <div class="inner">
+                <div class="left">
+                    <h3>Instagram</h3>
+                    <h6>@VIE_ET_MAISON</h6>
+                    <div class="btn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div><!-- left end -->
+
+                <div class="right">
+                    <div class="swiper insta_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#">
+                                <figure>
+                                    <img src="img/insta1.jpg" alt="">
+                                </figure>
+                                <h5>날씨가 많이 선선해졌어요💚</h5>
+                                <p>오늘 연휴 전 마지막 택배가 출고되었어요. 오늘 출고된 건은 그래도 연휴 끝나고 바로 받으실 수 있습니다!</p>
+                                    <p>vie_et_maison</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                <figure>
+                                        <img src="img/insta2.jpg" alt="">
+                                    </figure>
+                                    <h5>추석선물세트 2만원대로 완성🎁</h5>
+                                    <p>대만까지 진출한 비에메종 추석드립백 (with @sc_coffee ) 은 패키지가 딱 선물용이라 드립체어랑 세트세트🤎</p>
+                                    <p>vie_et_maison</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                    <figure>
+                                        <img src="img/insta3.jpg" alt="">
+                                    </figure>
+                                    <h5>비가 오는 날엔 따뜻한 드립커피🤎</h5>
+                                    <p>2만원대에 무료배송까지 합리적인 가격에 선물을 할 수 있는 드립백과 드립체어 선물세트가 추석을 위해 꽃단장했어요.
+                                    </p>
+                                    <p>vie_et_maison</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide"><a href="#">
+                                <figure>
+                                    <img src="img/insta4.jpg" alt="">
+                                </figure>
+                                <h5>열일하는 람쥐 🥜</h5>
+                                <p>이번주 비밀은 빈티지한 색감에 귀여운 다람쥐가 수레를 미는 듯한 접시입니다. 높이가 있어 오목한 접시라 과일이나 견과류를 담아놓기 좋은 사이즈에요. </p>
+                                <p>vie_et_maison</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="#">
+                                <figure>
+                                    <img src="img/insta_img01.jpg" alt="">
+                                </figure>
+                                <h5>요즘 날씨 너무 좋아 💛</h5>
+                                <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                <p>vie_et_maison</p>
+                            </a>
+                        </div>
+
+
+                        </div>
+                    </div>
+                </div><!-- right end -->
+            </div><!-- inner end -->
+        </section><!-- sec6 end -->
+
+        <footer>
+            <div class="footer_top">
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">도매신청</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용가이드</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div>
+                        <span>입금계좌</span>
+                        <strong>KB국민은행 562101-01-531761
+                            <span>예금주 : 주은영(비에메종)</span>
+                        </strong>
+                    </div>
+                </div><!-- inner end -->
+            </div><!-- footer_top end -->
+
+            <div class="footer_info">
+                <div class="inner">
+                    <ul>
+                        <li><strong>회사정보</strong></li>
+                        <li>비에메종 대표 : 주은영</li>
+                        <li>사업자등록번호 : 810-34-00590</li>
+                        <li>통신판매업신고 : 2019-부산동래-0330호 사업자정보확인</li>
+                        <li>개인정보관리책임자 : 양대석 / yang500@hanmail.net</li>
+                        <li>제휴/제안 : yang500@hanmail.net</li>
+                    </ul>
+
+                    <ul>
+                        <li><strong>배송/반품</strong></li>
+                        <li>반품 : 부산광역시 동래구 오천천로 471번 가길 61 2층</li>
+                        <li>택배 : CJ대한통운 1588-1255</li>
+                    </ul>
+
+                    <ul>
+                        <li><strong>고객센터</strong></li>
+                        <li>051-742-0214</li>
+                        <li>월 - 금 : 09:00 - 18:00</li>
+                        <li>점심시간 : 11:40 - 13:00</li>
+                        <li>토-일, 공휴일 휴무</li>
+                    </ul>
+                </div><!-- inner end -->
+                <p>고객님의 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 KICC 구매안전(에스크로)서비스를 이용하실 수 있습니다.</p>
+                <p>COPYRIGHT © VIE ET MAISON. ALL RIGHTS RESERVED.</p>
+            </div><!-- footer_info end -->
+        </footer>
+    </div><!-- wrap end -->
+</body>
+
+</html>
